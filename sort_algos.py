@@ -75,8 +75,8 @@ def selection_sort(lst: list) -> list:
         min_idx = i
         for j in range(i, len(lst)):
             if lst[j] < lst[min_idx]:
-                comparison += 1
                 min_idx = j
+            comparison += 1     #comparison is made on each step
         lst[i], lst[min_idx] = lst[min_idx], lst[i]
     return lst, comparison
 
